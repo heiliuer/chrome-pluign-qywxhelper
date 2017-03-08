@@ -18,15 +18,13 @@
       "19": "img/logo.png",
       "38": "img/logo.png"
     },
-    "default_title": "简词典",
+    "default_title": "微信企业号助手",
     "default_popup": "popup.html"
   },
   "permissions": [
     "tabs",
-    "debugger",
     "storage",
-    "<all_urls>",
-    "http://fanyi.youdao.com/*"
+    "<all_urls>"
   ],
   "content_scripts": [
     {
