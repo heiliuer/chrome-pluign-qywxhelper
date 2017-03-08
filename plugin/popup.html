@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Blacklist Checking</title>
+    <link rel="stylesheet" type="text/css" href="css/popup.css"/>
+    <style>
+        .wx_auto_pwd {
+            border: 1px solid #d8d8d8;
+        }
+        .lable_wx_enable{
+            line-height: 1em;
+            display: inline-block;
+        }
+        .lable_wx_enable input{
+            vertical-align: middle;
+            height: 1em;
+            margin: 0 0.5em 0 0;
+        }
+        .input_pwd{
+            border: 1px solid #d8d8d8;
+            padding: 2px;
+        }
+
+        .lable_wx_enable input + span:after{
+            content: "关闭";
+        }
+        .lable_wx_enable input:checked + span:after{
+            content: "启用";
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="wx_auto_pwd">
+        <legend>微信企业号自动填入密码</legend>
+        <div id="wx_form">
+            <input type="password" class="input_pwd" placeholder="密码" id="passwd_wx" name="passwd_wx">
+            <label for="wx_enable" class="lable_wx_enable"><input type="checkbox" id="wx_enable" checked><span></span></label>
+        </div>
+    </fieldset>
+</body>
+<script src="js/jquery-2.0.0.min.js"></script>
+<script src="js/popup.js"></script>
+</html>
