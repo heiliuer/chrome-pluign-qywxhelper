@@ -120,7 +120,7 @@
 
         function getStorage(callback) {
             chrome.storage.sync.get('data', function (data) {
-                console.log("get data:", data.data);
+                // console.log("get data:", data.data);
                 callback(data.data)
             });
         }

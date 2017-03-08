@@ -37,10 +37,10 @@
     }
 
     getStorage(function (data) {
-        console.log("saved:", data);
+        // console.log("saved:", data);
         DATA = data || {};
         wx_input.value = DATA.passwd || "";
-        console.log("wx_enable.checked", wx_enable.checked)
+        // console.log("wx_enable.checked", wx_enable.checked)
         wx_enable.checked = DATA.checked === true;
     })
 
