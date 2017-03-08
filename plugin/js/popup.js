@@ -1,5 +1,5 @@
 +function () {
-    let DATA = {}
+    var DATA = {}
     window.setStorage = function (data) {
         chrome.storage.sync.set({"data": data}, function () {
             // console.log("save data:", data);
@@ -13,9 +13,9 @@
         })
     }
 
-    let wx_form = document.querySelector("#wx_form");
-    let wx_input = wx_form.querySelector("input#passwd_wx");
-    let wx_enable = wx_form.querySelector("input#wx_enable");
+    var wx_form = document.querySelector("#wx_form");
+    var wx_input = wx_form.querySelector("input#passwd_wx");
+    var wx_enable = wx_form.querySelector("input#wx_enable");
 
     function save() {
         setStorage(DATA);
@@ -27,7 +27,7 @@
     }
 
     wx_input.ondblclick = function () {
-        let type = wx_input.getAttribute("type");
+        var type = wx_input.getAttribute("type");
         wx_input.setAttribute("type", type == "text" ? "password" : "text");
     }
 
