@@ -1,4 +1,4 @@
 .idea
 node_modules
 generate/sign_in.sql
-plugin.crx
+plugin.pem
